@@ -1,0 +1,169 @@
+<html>
+<head>
+	<title>MENU ĐẲNG CẤP NHẤT THẾ GIỚI</title>
+	<meta charset="UTF-8">
+<style>
+
+.namgiua{
+	   width: 1000;
+	   margin-left:auto;
+	   margin-right:auto;	  
+	  }
+.menu{
+background:#121212;
+}
+
+.menu ul{
+  list-style:none;
+  padding:0 15px;
+}
+.menu ul li{
+   position: relative;
+}
+
+.menu ul li a{
+   color:#EDEDED;
+   text-decoration:none;
+}
+.menu > ul > li{
+     display:inline-block;
+	 
+}
+
+.menu > ul > li > a {
+      display:block;
+	  line-height:40px;
+	  padding:0 15px;
+	  
+}
+
+.menu ul ul{
+ width: 220px;
+ position: absolute;
+ visibility:hidden;
+
+}
+
+.menu ul ul li{
+     line-height:40px;
+	 background: red;
+	 padding: 0 15px;
+	 left: -15px;
+	 
+}
+
+.menu ul ul li:hover{
+  background:#121212;
+
+}
+
+.menu ul li:hover > ul{
+ visibility:visible;
+ top:100%;
+
+}
+
+.menu ul ul ul{
+  top:0 !important;
+  left:100%;
+
+}
+.slideshow {
+
+   width: 1000px;
+   height: 250px;
+   overflow: hidden;
+   margin: 0 auto;
+ }
+.duongvien{
+
+   width: 3000px;
+   -webkit-animation: slide 10s ease infinite;
+
+}
+
+.slide{
+
+  float:left;
+  width:1000px;
+  height:250px;
+  display:flex;
+}
+
+@-webkit-keyframes slide {
+   33% {margin-left: 0px;}
+   66% {margin-left: -1000px;}
+   99% {margin-left: -2000px;}
+ }
+</style>
+</head>
+<body>
+<table border="1"  class="namgiua" >
+<tr>
+	<td colspan="2"><img src="tgdd.PNG" width="1000"></td>
+</tr>
+<tr align="center">
+	<td colspan="2">
+	<div class="menu">
+  <ul>
+    <li>
+		<li><a href="">MENU GỒM:</a></li>
+	  <li><a href="#">TRANG CHỦ</a></li>
+	  <li><a href="https://www.amd.com/en/campaigns/consumer?utm_source=bing&utm_medium=cpc&utm_campaign=US%7CCONS%7CG%7CLaptop&utm_term=laptop&utm_content=Laptop%20Exact">LAPTOP</a></li>
+	  <li><a href="#">PHỤ KIỆN</a></li>
+	  <li><a href="#">ĐIỆN THOẠI</a>
+	      <ul>
+		  <li><a href="https://www.apple.com/">APPLE</a></li>
+		  <li><a href="https://www.samsung.com/vn/">SAM SUNG</a>
+				<ul>
+					<li><a href="https://www.samsung.com/us/smartphones/galaxy-s21-5g/">S21 5G</a></li>
+					<li><a href="https://www.samsung.com/global/galaxy/galaxy-z-flip3-5g/specs/">Z FLIP 3</a></li>
+					<li><a href="https://www.samsung.com/us/smartphones/galaxy-a23-5g/">GALAXY A23</a></li>
+				</ul>	
+		  <li><a href="https://www.vivo.com/en/">VIVO</a></li>
+	      </ul>
+	  </li>
+	  </li>
+	</li>  
+  </ul>
+  </td>
+</div>
+</tr>
+<tr>
+	<td colspan="2">
+		<div  class="slideshow">
+
+			<div class="duongvien">
+	 
+				<div class="slide"  id="slide1"><img src="thegioi.PNG" width="1000" height="250"></div>
+
+				<div class="slide"  id="slide2"><img src="didong.PNG" width="1000" height="250"></div>
+	
+				<div class="slide"  id="slide5"><img src="fpt.PNG" width="1000" height="250"></div>
+    
+			</div>
+		</div>
+	</td>	
+</tr>
+<tr>
+	<td rowspan="2">
+	<form name="iphone" method="post">
+		<b><h3><p align="center">ĐĂNG KÝ MUA IPHONE 14</p></h3></b>
+		Họ Tên	<input type="text" name="hoten"><br><br>
+		Số CCCD <input type="text" name="CCCD"><br><br>
+		Loại	<input type="radio" name="loai" value="256GB" checked="256GB">256GB
+				<input type="radio" name="loai" value="512GB">512GB<br><br>
+		Lựa chọn	<input type="checkbox" name="luachon" value="Giao hàng">Giao hàng
+					<input type="checkbox" name="luachon" value="Phụ kiện">Phụ kiện
+					<input type="checkbox" name="luachon" value="Hóa đơn">Hóa đơn<br><br>
+		<input type="submit"  value="Đặt hàng" name="dathang" onclick="check_thongtin()">			
+	</form>
+	</td>
+<td align="center"><img src="ipvang.jpg" width="400" height="200"></td>
+<tr>
+<td align="center"><img src="9999.jpg" width="400" height="200"></td>
+</tr>
+</tr>
+</table>
+</body>
+</html>
